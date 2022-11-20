@@ -1,0 +1,48 @@
+body { display: grid; -webkit-box-align: center; -ms-flex-align: center; align-items: center; justify-items: center; height: 50vw; background-color: #fff; }
+
+#box { display: grid; -webkit-box-align: center; -ms-flex-align: center; align-items: center; justify-items: center; height: 600px; width: 600px; background-color: #fff; -webkit-filter: blur(10px) contrast(200); filter: blur(10px) contrast(200); }
+#box > div { -webkit-filter: none; filter: none; position: absolute; background-color: #8c00ff; height: 100px; width: 100px; border-radius: 100%; }
+#box > div:nth-child(2) { -webkit-animation-name: ani-2; animation-name: ani-2; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 0.4s; animation-delay: 0.4s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+#box > div:nth-child(3) { -webkit-animation-name: ani-3; animation-name: ani-3; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 0.6s; animation-delay: 0.6s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+#box > div:nth-child(4) { -webkit-animation-name: ani-4; animation-name: ani-4; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 0.8s; animation-delay: 0.8s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+#box > div:nth-child(5) { -webkit-animation-name: ani-5; animation-name: ani-5; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 1s; animation-delay: 1s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+#box > div:nth-child(6) { -webkit-animation-name: ani-6; animation-name: ani-6; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 1.2s; animation-delay: 1.2s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+#box > div:nth-child(7) { -webkit-animation-name: ani-7; animation-name: ani-7; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 1.4s; animation-delay: 1.4s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+#box > div:nth-child(8) { -webkit-animation-name: ani-8; animation-name: ani-8; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 1.6s; animation-delay: 1.6s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+#box > div:nth-child(9) { -webkit-animation-name: ani-9; animation-name: ani-9; -webkit-animation-duration: 10s; animation-duration: 10s; -webkit-animation-delay: 1.8s; animation-delay: 1.8s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+
+@-webkit-keyframes ani-2 { 0%, 100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  10%, 90% { -webkit-transform: translateY(-200px); transform: translateY(-200px); } }
+
+@keyframes ani-2 { 0%, 100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  10%, 90% { -webkit-transform: translateY(-200px); transform: translateY(-200px); } }
+@-webkit-keyframes ani-3 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(150px) translateY(-150px); transform: translateX(150px) translateY(-150px); } }
+@keyframes ani-3 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(150px) translateY(-150px); transform: translateX(150px) translateY(-150px); } }
+@-webkit-keyframes ani-4 { 0%, 100% { -webkit-transform: translateX(0px); transform: translateX(0px); }
+  10%, 90% { -webkit-transform: translateX(200px); transform: translateX(200px); } }
+@keyframes ani-4 { 0%, 100% { -webkit-transform: translateX(0px); transform: translateX(0px); }
+  10%, 90% { -webkit-transform: translateX(200px); transform: translateX(200px); } }
+@-webkit-keyframes ani-5 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(150px) translateY(150px); transform: translateX(150px) translateY(150px); } }
+@keyframes ani-5 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(150px) translateY(150px); transform: translateX(150px) translateY(150px); } }
+@-webkit-keyframes ani-6 { 0%, 100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  10%, 90% { -webkit-transform: translateY(200px); transform: translateY(200px); } }
+@keyframes ani-6 { 0%, 100% { -webkit-transform: translateY(0px); transform: translateY(0px); }
+  10%, 90% { -webkit-transform: translateY(200px); transform: translateY(200px); } }
+@-webkit-keyframes ani-7 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(-150px) translateY(150px); transform: translateX(-150px) translateY(150px); } }
+@keyframes ani-7 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(-150px) translateY(150px); transform: translateX(-150px) translateY(150px); } }
+@-webkit-keyframes ani-8 { 0%, 100% { -webkit-transform: translateX(0px); transform: translateX(0px); }
+  10%, 90% { -webkit-transform: translateX(-200px); transform: translateX(-200px); } }
+@keyframes ani-8 { 0%, 100% { -webkit-transform: translateX(0px); transform: translateX(0px); }
+  10%, 90% { -webkit-transform: translateX(-200px); transform: translateX(-200px); } }
+@-webkit-keyframes ani-9 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(-150px) translateY(-150px); transform: translateX(-150px) translateY(-150px); } }
+@keyframes ani-9 { 0%, 100% { -webkit-transform: translateX(0px) translateY(0px); transform: translateX(0px) translateY(0px); }
+  10%, 90% { -webkit-transform: translateX(-150px) translateY(-150px); transform: translateX(-150px) translateY(-150px); } }
+
+/*# sourceMappingURL=style.css.map */
