@@ -1,0 +1,62 @@
+*{
+    border: 0;
+}
+
+body{
+    background-color: rgb(210, 228, 243);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#box{
+    display: flex;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(225, 237, 247);
+    border-radius: 30px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.05),
+        inset 30px 30px 30px rgba(255, 255, 255, 0.7),
+        -30px -30px 30px rgba(255, 255, 255, 0.24),
+        inset -15px -15px 30px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: center;
+}
+#box > #text{
+    color: rgb(203, 222, 238);
+    font-weight: 600;
+    font-size: 0px;
+    opacity: 0;
+    transition: all .5s;
+}
+
+#box:hover > #text{
+    opacity: 1;
+    font-size: 60px;
+}
+
+
+#buy{
+    font-size: 20px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all .5s;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(203, 222, 238);
+    background-color: rgb(225, 237, 247);
+    box-shadow: 
+        inset 5px 5px 5px rgba(255, 255, 255, 0.7),
+        -1px -1px 5px rgba(255, 255, 255, 0.219),
+        inset -5px -5px 5px rgba(0, 0, 0, 0.075),
+        1px 1px 3px rgba(0, 0, 0, 0.219);
+    cursor: pointer;
+
+}
+
+#buy:hover{
+    letter-spacing: 10px;
+}
