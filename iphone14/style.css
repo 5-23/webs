@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    color: rgba(255, 255, 255, 0.555);
+    letter-spacing: 10px;
+}
+
+body{
+    display: grid;
+    justify-items: center;
+    /* background-color: rgb(205, 231, 255); */
+    background-color: #000;
+}
+
+#phone{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    background-image: url("bg.png");
+    background-size: 400px;
+    background-position: -10px -65px;
+
+    
+    margin-top: 100px;
+    border: solid 10px #000;
+    box-shadow: 0 0 10px #fff;
+    width: 380px;
+    height: 760px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+#phone:hover{
+    background-size: 420px;
+    background-position: -20px -85px;
+}
+#calls{
+    position: relative;
+    
+    opacity: 0;
+    display: flex;
+    gap: 10px;
+    transition: all .5s;
+    filter: blur(80px);
+}
+#calls > img{
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    filter: blur(100);
+    cursor: pointer;
+    transition: all .5s;
+    transition-timing-function: cubic-bezier(0.24, 0.75, 0.31, 1.23);
+}
+
+#calls > img[id=red]:hover{
+    transform: rotate(495deg);
+}
+#calls > img[id=green]:hover{
+    transform: rotate(360deg);
+}
+
+#calls > img[id=red]{
+    background-color: #FB363C;
+    transform: rotate(135deg);
+}
+
+#calls > img[id=green]{
+    background-color: #32D15A;
+}
+
+#calls > img[id=profile]{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    transform: translateY(-2px);
+}
+#calls > #texts{
+    padding-top: 20px;
+}
+
+#calls > b{
+    padding-left: 139px;
+}
+#calls > #texts > #iphone{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0px;
+    font-size: 5px;
+}
+#calls > #texts > #name{
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+#phone > header:hover > #calls{
+    opacity: 1;
+    filter: blur(0);
+}
+#phone > header{
+    position: absolute;
+    margin-top: 10px;
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    border-radius: 50px;
+    transition: all .8s;
+    transition-timing-function: cubic-bezier(0.24, 0.75, 0.31, 1.23);
+    clip-path: inset(0 round 50px 50px 50px 50px)
+}
+
+#phone > header:hover{
+    width: 365px;
+    height: 70px;
+}
+
+#phone > b{
+    font-size: 70px;
+    margin-top: 80px;
+}
