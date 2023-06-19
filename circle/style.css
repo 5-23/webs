@@ -1,0 +1,26 @@
+main{
+    width: 99vw;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > div{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #36f;
+        /* opacity: .8; */
+        border-radius: 100%;
+        /* animation-name: circle;
+        animation-duration: 1s; */
+        transform: translate(calc(sin(var(--deg))*var(--r)*-1), calc(cos(var(--deg))*var(--r)));
+    }
+}
+
+/* @keyframes circle {
+    0%{
+        transform: translate(calc(sin(0)), calc(cos(0)));
+    }
+    100%{
+    }
+} */
